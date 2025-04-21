@@ -22,15 +22,15 @@ export default {
         },
       },
       {
+        name: 'bio',
+        title: 'Biografi',
+        type: 'text',
+      },
+      {
         name: 'interests',
         title: 'Interesser',
         type: 'array',
         of: [{ type: 'string' }],
-      },
-      {
-        name: 'bio',
-        title: 'Biografi',
-        type: 'text',
       },
       {
         name: 'logs',
@@ -49,6 +49,11 @@ export default {
                 name: 'entry',
                 title: 'Loggtekst',
                 type: 'text',
+              },
+              {
+                name: 'timeUsed',
+                title: 'Tid brukt',
+                type: 'string',
               },
             ],
           },
